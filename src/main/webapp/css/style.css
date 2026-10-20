@@ -1,0 +1,246 @@
+:root {
+    color-scheme: light;
+    --ink: #192c38;
+    --muted: #536875;
+    --brand: #087f8c;
+    --brand-dark: #076671;
+    --canvas: #f3f7f5;
+    --line: #d9e4e1;
+}
+
+body {
+    background: var(--canvas);
+    color: var(--ink);
+}
+
+.site-header {
+    background: #fff;
+    border-bottom: 1px solid var(--line);
+}
+
+.navbar-brand {
+    color: var(--brand-dark);
+    font-size: 1.35rem;
+}
+
+.welcome-panel {
+    background: #e1f1ed;
+    border: 1px solid #c3dfd7;
+    border-radius: 8px;
+}
+
+.eyebrow {
+    color: var(--brand-dark);
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.btn-primary {
+    --bs-btn-bg: var(--brand);
+    --bs-btn-border-color: var(--brand);
+    --bs-btn-hover-bg: var(--brand-dark);
+    --bs-btn-hover-border-color: var(--brand-dark);
+}
+
+.category-tile,
+.status-panel {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 1.25rem;
+}
+
+.category-tile p,
+.navbar-text {
+    color: var(--muted);
+}
+
+.catalog-heading {
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 1rem;
+}
+
+.product-card {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.product-image,
+.product-image-placeholder {
+    aspect-ratio: 4 / 3;
+    width: 100%;
+}
+
+.product-image {
+    display: block;
+    object-fit: cover;
+}
+
+.product-image-placeholder {
+    align-items: center;
+    background: #e1f1ed;
+    color: var(--muted);
+    display: flex;
+    justify-content: center;
+}
+
+.product-card-body {
+    display: flex;
+    flex-direction: column;
+    min-height: 190px;
+    padding: 1.25rem;
+}
+
+.product-description {
+    color: var(--muted);
+    flex-grow: 1;
+}
+
+.product-card-footer {
+    align-items: baseline;
+    border-top: 1px solid var(--line);
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-top: 0.75rem;
+}
+
+.product-price {
+    color: var(--brand-dark);
+}
+
+.catalog-empty {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    color: var(--muted);
+    padding: 1.25rem;
+}
+
+.auth-panel {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    max-width: 480px;
+    padding: 2rem;
+}
+
+.add-product-panel {
+    max-width: 680px;
+}
+
+.admin-action {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    color: var(--ink);
+    display: block;
+    padding: 1.25rem;
+    text-decoration: none;
+}
+
+.admin-action:hover {
+    border-color: var(--brand);
+    color: var(--ink);
+}
+
+.admin-table-wrap {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    overflow-x: auto;
+}
+
+.admin-table-wrap .table {
+    margin-bottom: 0;
+    min-width: 760px;
+}
+
+.admin-product-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.cart-table-wrap {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    overflow-x: auto;
+}
+
+.cart-table-wrap .table {
+    margin-bottom: 0;
+    min-width: 700px;
+}
+
+.cart-quantity-form {
+    align-items: center;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.cart-quantity-form .form-control {
+    max-width: 84px;
+}
+
+.checkout-panel,
+.order-panel {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 1.25rem;
+}
+
+.checkout-address-fields {
+    border-top: 1px solid var(--line);
+    margin-top: 1.25rem;
+    padding-top: 1.25rem;
+}
+
+.checkout-lines,
+.order-lines {
+    border-bottom: 1px solid var(--line);
+}
+
+.checkout-line {
+    align-items: center;
+    border-bottom: 1px solid var(--line);
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    padding: 0.9rem 0;
+}
+
+.checkout-line:last-child {
+    border-bottom: 0;
+}
+
+.checkout-total {
+    align-items: baseline;
+    display: flex;
+    font-size: 1.1rem;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
+.order-table-wrap {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    overflow-x: auto;
+}
+
+.order-table-wrap .table {
+    margin-bottom: 0;
+    min-width: 620px;
+}
+
+@media (max-width: 575.98px) {
+    .auth-panel {
+        padding: 1.25rem;
+    }
+}
